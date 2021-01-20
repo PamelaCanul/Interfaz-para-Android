@@ -3,27 +3,6 @@ Creación de una interfaz para Android con MVC
 
 ### Requisitos
 
-### Nuevo proyecto
-1.Abrimos Android Studio 
-  - Si es la primera vez que usamos la aplicación creamos un nuevo proyecto. 
-  - Si no es la primera vez, cerramos nuestro proyecto actual y creamos uno nuevo. 
-
-2.Al crear un nuevo proyecto nos aparecerá la siguiente ventana 
-
-Debemos elegir el estilo de nuestra aplicación, existen diferentes estilos para las diferentes aplicaciones que desees crear, para este tutorial seleccionaremos **Empety Activity** 
-
-3.Ahora nos aparecerá la configuración de nuestro proyecto 
-  - Primero nos pedirá un nombre para el proyecto, puede ser cualquier nombre.
-  - Automáticamente se escribe el Package del proyecto una vez que le escribamos el nombre.
-  - Luego nos pide la ruta en donde se guardará el proyecto, en la imagen es un ejemplo de ruta que viene por defecto.
-  - Posteriormente nos pedirá el lenguaje en el que estará la aplicación, puede ser JAVA o Kotlin (https://developer.android.com/kotlin?hl=es-419), en este tutorial usaremos JAVA.
-  - Por último debemos elegir el mínimo SDK que se necesita para que nuestra aplicación funcione, se recomienda utilizar el API 21 que pertenece al Android 5.0, pero si quieres elegir otra o saber mas sobre la API, seleccionas **Help me choose**, y te aparecerá la siguiente ventana.
-
-    Aquí se te describe más a detalle la información de la API, selecciona la que mas te convenga, para     el tutorial usaremos la 5.0 
-  - Seleccionamos Finish.
-  
-4.El proyecto se ha creado. 
-
 ### MVC en Android Studio
 
 **¿Qué es MVC?** *Es un patrón de arquitectura* MVC(modelo – vista – controlador) basado principalmente en la separación de intereses: 
@@ -63,3 +42,25 @@ Las vistas nos van a servir para representar varios objetos que se encuentran en
 Para el caso del ejemplo crearemos una clase llamada Animales 
 
 Controlador: En este caso usaremos algo ya existente llamado mainactivity.
+
+### Nuevo proyecto
+1.Abrimos Android Studio 
+  - Si es la primera vez que usamos la aplicación creamos un nuevo proyecto. 
+  - Si no es la primera vez, cerramos nuestro proyecto actual y creamos uno nuevo. 
+
+2.Al crear un nuevo proyecto nos aparecerá la siguiente ventana 
+
+Debemos elegir el estilo de nuestra aplicación, existen diferentes estilos para las diferentes aplicaciones que desees crear, para este tutorial seleccionaremos **Empety Activity** 
+
+3.Ahora nos aparecerá la configuración de nuestro proyecto 
+  - Primero nos pedirá un nombre para el proyecto, puede ser cualquier nombre.
+  - Automáticamente se escribe el Package del proyecto una vez que le escribamos el nombre.
+  - Luego nos pide la ruta en donde se guardará el proyecto, en la imagen es un ejemplo de ruta que viene por defecto.
+  - Posteriormente nos pedirá el lenguaje en el que estará la aplicación, puede ser JAVA o Kotlin (https://developer.android.com/kotlin?hl=es-419), en este tutorial usaremos JAVA.
+  - Por último debemos elegir el mínimo SDK que se necesita para que nuestra aplicación funcione, se recomienda utilizar el API 21 que pertenece al Android 5.0, pero si quieres elegir otra o saber mas sobre la API, seleccionas **Help me choose**, y te aparecerá la siguiente ventana.
+
+    Aquí se te describe más a detalle la información de la API, selecciona la que mas te convenga, para     el tutorial usaremos la 5.0 
+  - Seleccionamos Finish.
+  
+4.El proyecto se ha creado. 
+
