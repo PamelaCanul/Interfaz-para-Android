@@ -80,3 +80,4 @@ Debemos elegir el estilo de nuestra aplicación, existen diferentes estilos para
 
 9.Por devecto en la vista aparece un `Hello Word` pero en el controlador puedo cambiar su contenido, agregamos `TextView vistaUsuario = (TextView)findViewById(R.id.usuario);` en el *MainActivity*
 
+10.En el mismo controlador creamos un usuario `UsuarioModelos usuario = new UsuarioModelos();`
