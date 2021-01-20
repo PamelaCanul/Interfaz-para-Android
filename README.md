@@ -1,4 +1,4 @@
-# Interfaz-para-Android
+# Interfaz para Android
 Creación de una interfaz para Android con MVC
 
 ### Requisitos
@@ -32,6 +32,10 @@ Debemos elegir el estilo de nuestra aplicación, existen diferentes estilos para
 - **Controlador**: *responde a las acciones del usuario*, modificando el modelo cuando sea necesario, además se comunica constantemente con la vista para que se actualice con los últimos cambios del modelo. 
 - **Vista**: *proporciona al usuario información del modelo*. 
 
+Con este patrón de diseño se propone la **modularidad**, ya que el programador divide su aplicación en varios módulos diferentes, esto ayuda a disminuir el grado de dificultad del problema al que da respuesta el programa, además que facilita la comprensión del programa. 
+
+El usuario interactúa con la interfaz de usuario, el controlador recibe la información de la vista-interfaz y accede al modelo, lo actualiza y modifica con la información que recibió, se realiza el proceso lógico y la vista obtiene sus datos del modelo para generar una interfaz para el usuario, la interfaz de usuario espera nuevas instrucciones por parte del usuario y comienza el ciclo nuevamente. 
+
 *Principales errores al utilizar este patrón de arquitectura en Android:*
 
   **o**	Hacer el código dependiente 
@@ -57,3 +61,5 @@ Las vistas nos van a servir para representar varios objetos que se encuentran en
 **iii.**	Ahora creamos una clase en donde se encontrarán los objetos que se mostraran en la vista
 
 Para el caso del ejemplo crearemos una clase llamada Animales 
+
+Controlador: En este caso usaremos algo ya existente llamado mainactivity.
