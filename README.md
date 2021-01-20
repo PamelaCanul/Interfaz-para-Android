@@ -7,7 +7,7 @@ Creación de una interfaz para Android con MVC
 
 ### MVC en Android Studio
 
-**¿Qué es MVC?** *Es un patrón de arquitectura* MVC(modelo – vista – controlador) basado principalmente en la separación de intereses: 
+**¿Qué es MVC?** *Es un patrón de diseño*, MVC(modelo – vista – controlador) basado principalmente en la separación de intereses: 
 
 - **Modelo**: *contiene la información con la que el sistema trabaja*, esta información se le proporciona a la vista para que esta pueda mostrarla y permite así realizar cambios en el controlador. 
 - **Controlador**: *responde a las acciones del usuario*, modificando el modelo cuando sea necesario, además se comunica constantemente con la vista para que se actualice con los últimos cambios del modelo. 
