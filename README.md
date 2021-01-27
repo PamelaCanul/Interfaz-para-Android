@@ -72,12 +72,35 @@ Debemos elegir el estilo de nuestra aplicación, existen diferentes estilos para
 
 **iii.** Dentro del nuevo paquete llamado Modelo, creamos una nueva clase donde guardaremos para esta ocacion los objetos del usuario. 
 
-**iv.**	Ahora creamos una clase en donde se encontrarán los objetos que se mostraran en la vista
+**iv.**	Ahora creamos una clase que llamaremoso *UsuarioModelo.class* en donde se encontrarán los objetos que se mostraran en la vista
 
-7.En el controlador *MainActivity*, debemos tener una forma de adquirir la información y mostrarlo en la vista, para hacer esto primero modifiquemos nuestro archivo *.xml*, en este tutorial modificaremos el archivo *activity_main.xml* pero se pueden hacer nuevos archivos para tener mas vistas.
+7.Ya tenemos creada la clase, para este ejemplo vamos a crear un `String nombre` aqui guardaremos el nombre del usuario
 
-8.En el *activity_main.xml* localizamos la etiqueta `<TextView` en esa etiqueta agregamos la siguiente linea `android:id="@+id/usuario"`
+8. Creamos el constructor `public UsuarioModelo(){ }`
 
-9.Por devecto en la vista aparece un `Hello Word` pero en el controlador puedo cambiar su contenido, agregamos `TextView vistaUsuario = (TextView)findViewById(R.id.usuario);` en el *MainActivity*
+9.Creamos un *set* que reciba el nombre  `public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }`
 
-10.En el mismo controlador creamos un usuario `UsuarioModelos usuario = new UsuarioModelos();`
+10.Creamos un *get* que devuela el nombre del usuario `public String getNombre() {
+        return nombre;
+    }`
+
+11.En el controlador *MainActivity*, debemos tener una forma de adquirir la información y mostrarlo en la vista, para hacer esto primero modifiquemos nuestro archivo *.xml*, en este tutorial modificaremos el archivo *activity_main.xml* pero se pueden hacer nuevos archivos para tener mas vistas. Este archvivo lo puedes localizar en la carpeta *res* en el directorio de *layout* 
+
+12.En el *activity_main.xml* localizamos la etiqueta `<TextView` en esa etiqueta agregamos la siguiente linea `android:id="@+id/txv1"`
+
+13.Copiamos el *TextView* y lo pegamos debajo del que viene por defecto, le cambiamos la siguiente linea `android:id="@+id/txv1"` por `android:id="@+id/txv2"` y tambien cambiamos la linea `android:text="Hello World!"` por `android:text="Usuario"` 
+
+14.Arrbiba entontramos los botones *Code, Split y Desing* seleccionamos *Split* o *Desing* y acomodamos los cuadros de texto, para que no esten juntos.
+
+14.Por devecto en la vista aparece un `Hello Word` pero en el controlador **MainActivity.java** puedo cambiar su contenido, agregamos `TextView text1 = (TextView)findViewById(R.id.txv1);
+        text1.setText("Hola");` en el *MainActivity* enviará una nueva información a la vista.  
+ 
+15.Agregamos otra linea ` UsuarioModelo usuario = new UsuarioModelo();
+        usuario.setNombre("Fulanito");`en el *MainActivity* aqui creamos un nuevo objeto de tipo *Usuario*
+
+16.Enviamos el objeto nuevo a la vista `TextView textusuario = (TextView)findViewById(R.id.txv2);
+        textusuario.setText(usuario.getNombre());`
+
+17.Corremos la aplicacion, podemos apretar en el icono de una flecha verde donde automaticamente se abre un dispositivo virtual.
