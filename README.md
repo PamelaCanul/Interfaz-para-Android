@@ -37,6 +37,8 @@ Las vistas nos van a servir para representar varios objetos que se encuentran en
 
 ## Tutorial 
 
+**URL del tutorial:** https://youtu.be/LwTfiDHbNS8 
+
 ### Nuevo proyecto
 1.Abrimos Android Studio 
   - Si es la primera vez que usamos la aplicación creamos un nuevo proyecto. 
